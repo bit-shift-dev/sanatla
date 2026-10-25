@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" role="img" aria-labelledby="title desc">
+  <title id="title">Portre kontrolü ve güvenli teslimat</title>
+  <desc id="desc">Koruyucu ambalaja yerleştirilen tamamlanmış portreyi gösteren illüstrasyon.</desc>
+  <rect width="800" height="600" fill="#f5f1e7"/>
+  <path d="M0 490c147-59 251-42 374 2s260 33 426-30v138H0z" fill="#c19a6b" opacity=".3"/>
+  <rect x="128" y="111" width="336" height="376" rx="7" fill="#c19a6b"/>
+  <rect x="148" y="132" width="296" height="334" rx="3" fill="#755944"/>
+  <rect x="168" y="152" width="256" height="294" fill="#f5f1e7"/>
+  <path d="M193 406c20-63 52-95 102-95 48 0 80 32 101 95" fill="#c19a6b"/>
+  <ellipse cx="295" cy="261" rx="54" ry="70" fill="#755944"/>
+  <path d="M241 249c4-50 23-79 57-79 34 0 54 29 56 79-15-13-33-20-55-20s-41 7-58 20" fill="#383531"/>
+  <path d="M275 266h8m29 0h8" stroke="#f5f1e7" stroke-width="5" stroke-linecap="round"/>
+  <path d="M287 296q10 7 20 0" fill="none" stroke="#f5f1e7" stroke-width="4" stroke-linecap="round"/>
+  <path d="M516 172l121-51 104 54-120 57z" fill="#c19a6b"/>
+  <path d="M516 172v224l105 65V232z" fill="#755944"/>
+  <path d="M621 232l120-57v218l-120 68z" fill="#c19a6b"/>
+  <path d="M516 172l105 60 120-57m-120 57v232" fill="none" stroke="#383531" stroke-width="7" stroke-linejoin="round"/>
+  <path d="M588 198l67-29m-67 86 67-29m-67 85 67-29" stroke="#f5f1e7" stroke-width="8" stroke-linecap="round" opacity=".9"/>
+  <circle cx="665" cy="404" r="57" fill="#755944"/>
+  <path d="M637 406l19 19 39-44" fill="none" stroke="#f5f1e7" stroke-width="11" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M185 517h228" stroke="#755944" stroke-width="11" stroke-linecap="round"/>
+  <path d="M213 544h170" stroke="#c19a6b" stroke-width="10" stroke-linecap="round"/>
+</svg>

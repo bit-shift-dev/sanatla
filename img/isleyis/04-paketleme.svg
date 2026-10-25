@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 420" role="img" aria-labelledby="title desc">
+  <title id="title">Güvenli paketleme</title>
+  <desc id="desc">Tamamlanmış portre, korumalı bir kutuda kargoya hazırlanıyor.</desc>
+  <rect width="640" height="420" fill="#f5f1e7"/>
+  <rect x="38" y="38" width="564" height="344" rx="18" fill="#eadcc5"/>
+  <path d="m136 166 184-91 184 91v137l-184 82-184-82z" fill="#c9a676" stroke="#7c5f2d" stroke-width="8" stroke-linejoin="round"/>
+  <path d="m136 166 184 94 184-94M320 260v125M228 120l184 93" fill="none" stroke="#7c5f2d" stroke-width="8"/>
+  <rect x="253" y="130" width="133" height="107" rx="4" fill="#fffaf0" stroke="#7c5f2d" stroke-width="6" transform="rotate(-8 320 184)"/>
+  <circle cx="320" cy="165" r="19" fill="#c89162"/>
+  <path d="M284 216c4-25 18-39 36-39s32 14 36 39" fill="#7c5f2d"/>
+  <path d="M490 104v-34m-17 17h34" stroke="#fffaf0" stroke-width="8" stroke-linecap="round"/>
+</svg>

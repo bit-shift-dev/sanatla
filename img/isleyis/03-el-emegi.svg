@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 420" role="img" aria-labelledby="title desc">
+  <title id="title">El emeğiyle üretim</title>
+  <desc id="desc">Fırça ve paletle tuval üzerinde portre resmi yapan sanatçı.</desc>
+  <rect width="640" height="420" fill="#f5f1e7"/>
+  <rect x="38" y="38" width="564" height="344" rx="18" fill="#eadcc5"/>
+  <rect x="115" y="73" width="260" height="265" rx="5" fill="#fffaf0" stroke="#7c5f2d" stroke-width="9"/>
+  <circle cx="245" cy="158" r="48" fill="#c89162"/>
+  <path d="M170 302c9-53 38-81 75-81s66 28 75 81" fill="#7c5f2d"/>
+  <path d="M430 112c-29 13-44 36-50 73l52 16c19-29 26-54 16-77-4-10-10-14-18-12z" fill="#c89162"/>
+  <path d="m426 192 87-112 25 19-86 114-42 25z" fill="#a64b37"/>
+  <path d="m513 80 13-17 26 19-14 17z" fill="#62491f"/>
+  <path d="M462 272c12-18 31-28 57-26 20 2 31 18 26 36-9 30-55 39-83 9z" fill="#d0ad6d"/>
+  <circle cx="475" cy="285" r="7" fill="#ac5540"/><circle cx="510" cy="296" r="7" fill="#718757"/>
+</svg>

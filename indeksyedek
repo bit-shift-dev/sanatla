@@ -1,0 +1,13 @@
+  <div class="navbar">
+    <div class="logo">
+      <img src="img/logo.PNG" alt="Site Logo">
+    </div>
+    <a href="index.html">Hakkımızda</a>
+    <a href="galeri.html">Portre Örnekleri</a>
+    <a href="isleyis.html">İşleyiş Nasıl?</a>
+    <a href="fiyatlar.html">Fiyatlar</a>
+    <a href="magaza.html">Mağaza</a>
+    <a href="forum.html">Forum</a>
+    <a href="iletisim.html">İletişim</a>
+  </div>
+ </div>

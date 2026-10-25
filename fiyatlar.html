@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Fiyatlar ve Hesaplama | Sanatlan</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="site-header"><nav class="navbar" aria-label="Ana menü">
+    <a class="logo" href="index.html" aria-label="Sanatlan ana sayfa"><img src="img/logo.png" alt="Sanatlan"></a>
+    <div class="nav-links"><a href="index.html">Hakkımızda</a><a href="galeri.html">Portre Örnekleri</a><a href="isleyis.html">İşleyiş Nasıl?</a><a href="fiyatlar.html">Fiyatlar</a><a href="magaza.html">Sanatçılar</a><a href="forum.html">Forum</a><a href="iletisim.html">İletişim</a></div>
+  </nav><div class="announcement-bar">Her portre, size özel ve el emeğiyle hazırlanır.</div></header>
+  <main class="page-main">
+    <section class="page-heading"><p class="eyebrow">Şeffaf fiyatlandırma</p><h1>Fiyat tablosu</h1><p>Portre ücretleri ölçü ve figür sayısına göre değişir. Aşağıdaki tabloyu kullanarak tahmini fiyatınızı hesaplayın.</p></section>
+    <section class="pricing-grid" aria-label="Portre fiyatları">
+      <article class="product-card"><h2>Karakalem</h2><div class="table-wrap"><table><thead><tr><th>Boyut</th><th>1 figür</th><th>2 figür</th><th>3 figür</th><th>4 figür</th></tr></thead><tbody><tr><td>25×30</td><td>1.000 TL</td><td>1.400 TL</td><td>1.800 TL</td><td>2.200 TL</td></tr><tr><td>35×50</td><td>1.400 TL</td><td>1.800 TL</td><td>2.200 TL</td><td>2.600 TL</td></tr><tr><td>50×70</td><td>3.000 TL</td><td>3.400 TL</td><td>3.800 TL</td><td>4.200 TL</td></tr><tr><td>70×100</td><td>5.000 TL</td><td>5.400 TL</td><td>5.800 TL</td><td>6.200 TL</td></tr></tbody></table></div></article>
+      <article class="product-card"><h2>Yağlıboya</h2><div class="table-wrap"><table><thead><tr><th>Boyut</th><th>1 figür</th><th>2 figür</th><th>3 figür</th><th>4 figür</th></tr></thead><tbody><tr><td>25×30</td><td>1.000 TL</td><td>1.400 TL</td><td>1.800 TL</td><td>2.200 TL</td></tr><tr><td>35×50</td><td>1.400 TL</td><td>1.800 TL</td><td>2.200 TL</td><td>2.600 TL</td></tr><tr><td>50×70</td><td>3.000 TL</td><td>3.400 TL</td><td>3.800 TL</td><td>4.200 TL</td></tr><tr><td>70×100</td><td>5.000 TL</td><td>5.400 TL</td><td>5.800 TL</td><td>6.200 TL</td></tr></tbody></table></div></article>
+      <article class="product-card compact-prices"><h2>Dijital portre</h2><p>Popart, çizgi film ve çizgi roman stilleri</p><strong>800 TL</strong></article>
+      <article class="product-card compact-prices"><h2>Yağlıboya röprodüksiyon</h2><p>Metrekare başına</p><strong>6.000 TL</strong></article>
+    </section>
+    <section class="calculator-section" id="hesaplama">
+      <div class="page-heading"><p class="eyebrow">Kişiye özel portre</p><h2>Fiyatınızı hesaplayın</h2><p>Seçiminiz değiştikçe tahmini tutar güncellenir. Hayvanlar da portredeki figür sayısına dâhil edilir.</p></div>
+      <form id="priceCalculator">
+        <fieldset class="choice-group"><legend>Teknik</legend><div class="choice-grid technique-grid">
+          <label class="choice-card"><input type="radio" name="technique" value="karakalem" checked><img src="img/karakalem/3k.jpg" alt="Karakalem örneği"><span>Karakalem</span></label>
+          <label class="choice-card"><input type="radio" name="technique" value="yagli"><img src="img/yagliboya/3y.jpg" alt="Yağlıboya örneği"><span>Yağlıboya</span></label>
+          <label class="choice-card"><input type="radio" name="technique" value="digital"><img src="img/digital/1d.jpg" alt="Dijital portre örneği"><span>Dijital</span></label>
+          <label class="choice-card"><input type="radio" name="technique" value="sulu"><img src="img/karakalem/4k.jpg" alt="Sulu boya portre örneği"><span>Suluboya</span></label>
+          <label class="choice-card"><input type="radio" name="technique" value="kurukalem"><img src="img/karakalem/2k.jpg" alt="Kuru kalem portre örneği"><span>Kuru kalem</span></label>
+        </div></fieldset>
+        <fieldset class="choice-group style-group" hidden><legend>Dijital stil</legend><div class="choice-grid choice-grid-small">
+          <label class="choice-card"><input type="radio" name="digitalStyle" value="Popart" checked><img src="img/digital/1d.jpg" alt="Popart dijital portre örneği"><span>Popart</span></label>
+          <label class="choice-card"><input type="radio" name="digitalStyle" value="Cartoon"><img src="img/digital/2d.jpg" alt="Cartoon dijital portre örneği"><span>Cartoon</span></label>
+          <label class="choice-card"><input type="radio" name="digitalStyle" value="Comic"><img src="img/digital/3d.jpg" alt="Comic dijital portre örneği"><span>Comic</span></label>
+        </div></fieldset>
+        <fieldset class="choice-group size-group"><legend>Boyut</legend><div class="choice-grid choice-grid-small">
+          <label class="choice-card"><input type="radio" name="size" value="25x30" checked><img src="img/karakalem/1k.jpg" alt=""><span>25×30 cm</span></label>
+          <label class="choice-card"><input type="radio" name="size" value="35x50"><img src="img/yagliboya/1y.jpg" alt=""><span>35×50 cm</span></label>
+          <label class="choice-card"><input type="radio" name="size" value="50x70"><img src="img/yagliboya/2y.jpg" alt=""><span>50×70 cm</span></label>
+          <label class="choice-card"><input type="radio" name="size" value="70x100"><img src="img/yagliboya/4y.jpg" alt=""><span>70×100 cm</span></label>
+        </div></fieldset>
+        <div class="count-fields">
+          <input type="hidden" id="figureCount" name="figures" value="1">
+          <input type="hidden" id="animalCount" name="animals" value="0">
+          <fieldset class="count-choice-group"><legend>İnsan figürü</legend><div class="count-choice-grid">
+            <button type="button" class="count-choice active" data-count-group="figureCount" data-count-value="1" aria-pressed="true"><strong>1</strong><span>kişi</span></button>
+            <button type="button" class="count-choice" data-count-group="figureCount" data-count-value="2" aria-pressed="false"><strong>2</strong><span>kişi</span></button>
+            <button type="button" class="count-choice" data-count-group="figureCount" data-count-value="3" aria-pressed="false"><strong>3</strong><span>kişi</span></button>
+            <button type="button" class="count-choice" data-count-group="figureCount" data-count-value="4" aria-pressed="false"><strong>4+</strong><span>kişi</span></button>
+          </div></fieldset>
+          <fieldset class="count-choice-group"><legend>Hayvan</legend><div class="count-choice-grid">
+            <button type="button" class="count-choice active" data-count-group="animalCount" data-count-value="0" aria-pressed="true"><strong>0</strong><span>yok</span></button>
+            <button type="button" class="count-choice" data-count-group="animalCount" data-count-value="1" aria-pressed="false"><strong>1</strong><span>hayvan</span></button>
+            <button type="button" class="count-choice" data-count-group="animalCount" data-count-value="2" aria-pressed="false"><strong>2</strong><span>hayvan</span></button>
+            <button type="button" class="count-choice" data-count-group="animalCount" data-count-value="3" aria-pressed="false"><strong>3+</strong><span>hayvan</span></button>
+          </div></fieldset>
+        </div>
+        <label class="upload-label" for="orderPhoto">Fotoğraf ekle <span>(isteğe bağlı, bu sayfada saklanmaz)</span></label>
+        <input id="orderPhoto" type="file" accept="image/*">
+        <div class="estimate-box"><p>Tahmini toplam</p><output id="estimatedPrice" aria-live="polite">1.000 TL</output><p class="estimate-note">Suluboya ve kuru kalem için karakalem fiyatları uygulanır. Dijital portrelerde stil başına sabit fiyat 800 TL'dir. Dijital dışındaki tekniklerde tablodaki ilk figür fiyatına, her ek figür için 400 TL eklenir. Kesin fiyat sipariş teyidinde netleşir.</p></div>
+        <button type="submit" class="button order-button">WhatsApp'tan sipariş verin</button>
+        <p id="orderStatus" class="order-status" role="status"></p>
+      </form>
+    </section>
+  </main>
+  <footer class="site-footer"><p>Sanatlan · Anılarınızı sanatla yaşatın.</p><nav aria-label="Alt menü"><a href="isleyis.html">İşleyiş</a><a href="fiyatlar.html">Fiyatlar</a><a href="iletisim.html">İletişim</a></nav></footer>
+  <a href="https://wa.me/905523910092" class="whatsapp-button" target="_blank" rel="noopener noreferrer">WhatsApp'tan ulaşın</a>
+  <script src="js/script.js"></script>
+</body>
+</html>

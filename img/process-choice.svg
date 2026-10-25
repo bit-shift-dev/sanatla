@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" role="img" aria-labelledby="title desc">
+  <title id="title">Portre tercihlerini belirleme</title>
+  <desc id="desc">Sanat paleti, portre taslağı ve ölçü kartlarıyla teknik seçimini anlatan çizim.</desc>
+  <rect width="800" height="600" fill="#f5f1e7"/>
+  <circle cx="654" cy="122" r="70" fill="#c19a6b" opacity=".32"/>
+  <path d="M0 490c132-68 216-31 331 8s267 29 469-42v144H0z" fill="#c19a6b" opacity=".28"/>
+  <rect x="94" y="86" width="308" height="398" rx="12" fill="#755944"/>
+  <rect x="111" y="103" width="274" height="364" rx="5" fill="#f5f1e7"/>
+  <rect x="133" y="126" width="230" height="205" rx="3" fill="#e5d9c5"/>
+  <path d="M163 292c15-71 44-110 86-110s73 39 88 110" fill="#c19a6b"/>
+  <ellipse cx="249" cy="215" rx="45" ry="57" fill="#755944"/>
+  <path d="M207 206c4-41 25-64 50-64 29 0 47 24 50 62-12-10-24-15-38-15-22 0-40 8-62 17" fill="#383531"/>
+  <path d="M228 224h10m24 0h10" stroke="#f5f1e7" stroke-width="4" stroke-linecap="round"/>
+  <path d="M242 247q8 6 16 0" fill="none" stroke="#f5f1e7" stroke-width="3" stroke-linecap="round"/>
+  <rect x="133" y="352" width="230" height="18" rx="9" fill="#c19a6b"/>
+  <rect x="133" y="386" width="154" height="12" rx="6" fill="#c19a6b" opacity=".65"/>
+  <rect x="133" y="416" width="194" height="12" rx="6" fill="#c19a6b" opacity=".65"/>
+  <g transform="rotate(28 535 279)">
+    <rect x="517" y="174" width="36" height="207" rx="7" fill="#755944"/>
+    <path d="M517 375h36l-18 47z" fill="#383531"/>
+    <path d="M517 192h36" stroke="#c19a6b" stroke-width="8"/>
+    <path d="M527 224v132" stroke="#f5f1e7" stroke-width="4" stroke-linecap="round" opacity=".8"/>
+    <rect x="517" y="163" width="36" height="17" rx="4" fill="#c19a6b"/>
+  </g>
+  <circle cx="650" cy="395" r="58" fill="#755944"/>
+  <circle cx="650" cy="395" r="39" fill="#f5f1e7"/>
+  <path d="M650 356c13 0 23 8 23 18 0 9-8 16-23 21-15-5-23-12-23-21 0-10 10-18 23-18z" fill="#c19a6b"/>
+  <path d="M625 414q25-27 50 0v12h-50z" fill="#c19a6b"/>
+  <path d="M532 497h193" stroke="#755944" stroke-width="10" stroke-linecap="round"/>
+  <path d="M556 522h145" stroke="#c19a6b" stroke-width="9" stroke-linecap="round"/>
+</svg>

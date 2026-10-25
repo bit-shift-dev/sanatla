@@ -1,0 +1,393 @@
+:root {
+  --bej: #f5f1e7;
+  --siyah: #2a2a2a;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0 auto;
+  max-width: 1000px; /* Maksimum genişlik */
+  font-family: 'Playfair Display', serif;
+  background: var(--bej);
+  color: var(--siyah);
+ 
+
+}
+
+
+
+
+/* ------Üst menü-------- */
+
+
+
+
+   .navbar {
+      background-color: #333;
+      overflow: hidden;
+      display: flex;
+      justify-content: space-between; /* Logoyu sola, menüyü sağa iter */
+      justify-content: center;
+      align-items: center;
+      padding: 10px 0;
+      
+    }
+
+    .logo img {
+  height: 50px; /* Logo boyutunu ayarla */
+}
+
+    .navbar a {
+      color: white;
+      padding: 14px 20px;
+      text-decoration: none;
+      text-transform: uppercase;
+      font-weight: bold;
+      transition: background-color 0.3s;
+    }
+
+    .navbar a:hover {
+      background-color: #555;
+    }
+
+    /* Responsive için */
+
+    @media (max-width: 768px) {
+      .navbar {
+        flex-direction: column;
+        position: fixed;
+        left: 0; /* Sol tarafa yapıştır */
+        top: 0;
+        bottom: 0;
+        height: 100vh;
+        width: 80px;
+        background-color: #333;
+        z-index: 1000;
+        overflow-y: auto;
+        font-family: 'Roboto Condensed', sans-serif;
+        background-color: rgba(0, 0, 0, 0.1); /* yarı şeffaf siyah */
+        
+      
+      }
+    
+      .navbar a {
+        display: block;
+        color: #333;
+        text-decoration: none;
+        
+        margin-bottom: auto;
+        font-size: 10px;
+        line-height: 20px;
+        position: relative;
+        text-align: center;
+      
+        
+      }
+    
+      .navbar a:hover {
+        background-color: #555;
+      }
+
+
+      @media (max-width: 768px) {
+        .navbar .logo img {
+          content: url('togo.png'); /* Mobil için farklı logo */
+          height: 70px; /* Mobilde daha küçük logo boyutu */
+          margin-bottom: 20px;
+        }
+      }
+
+
+
+
+
+
+        
+        .container {
+          flex-direction: column; /* Yan yana olan öğeleri üst üste getir */
+          gap: 10px; /* Öğeler arasındaki boşluğu azalt */
+          display: block;
+          padding: unset; /* Padding'i sıfırlar */
+          margin: unset; /* Margin'i sıfırlar */
+          
+        }
+      
+        .container .text {
+          padding-left: 70px; /* Sol boşluğu kaldır */
+          font-size:15px; /* Yazı boyutunu küçült */
+          
+          
+        }
+      
+        .image {
+          float: right; /* Resmi sağa yasla */
+          margin-right: 0; /* Sağ kenar boşluğunu sıfırla */
+          margin-left:90px; /* Sol kenar boşluğunu artır */
+          max-width: 100%; /* Resmin genişliğini sınırlı tut */
+        }
+      
+        .image img {
+          max-width: 90%; /* Mobilde resmin genişliğini küçült */
+          height: auto; /* Oranını koru */
+        }
+
+
+        .text {
+          padding-left: 200px; /* Sadece masaüstünde sol boşluk */
+        }
+
+
+
+      
+    }
+
+
+
+  /* Responsive için */
+
+
+
+/* -------------acordion menü------------  */
+
+
+.accordion {
+  max-width: 200px; /* Küçültmek için genişliği düşürebilirsin */
+  margin: 50px 0 50px 0px; /* Üst, sağ, alt, sol: sol taraf için daha az boşluk */
+  padding: 0 0px;
+}
+
+
+.accordion-item {
+  border: 1px solid #ddd;
+  margin-bottom: 10px;
+  border-radius: 8px;
+  overflow: hidden;
+  transition: all 0.3s;
+}
+
+.accordion-header {
+  background: #f8f9fa;
+  padding: 15px;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: left;
+}
+
+.accordion-header h3 {
+  margin: 0;
+  color: #333;
+}
+
+.arrow {
+  font-size: 8px;
+  transition: transform 0.3s;
+}
+
+.accordion-content {
+  max-height:0px;
+  overflow: hidden;
+  padding: 0 15px;
+  background: white;
+  transition: max-height 0.3s ease-out;
+}
+
+.accordion-item.active .accordion-content {
+  max-height: 200px; /* İçerik yüksekliğine göre ayarlayın */
+  padding: 15px;
+}
+
+.accordion-item.active .arrow {
+  transform: rotate(90deg);
+}
+
+
+
+
+/* -------------container zon------------  */
+
+
+
+
+
+
+.container {
+  display: flex;
+  align-items: center; /* Dikeyde ortalar */
+  gap: 5px;           /* Öğeler arasında boşluk */
+  padding: 30px; /* Üstten boşluk */
+  
+  
+}
+
+.text {
+  flex: 1;             /* Yazı alanı esneyerek yer kaplar */
+  padding-left: 200px; /* Yazı içeriğini sağa kaydırır */
+  margin-left: 0px; /* Kutunun tamamını sağa kaydırır */
+  font-size: 11px; /* 16px varsayılan, bu daha küçük */
+  line-height: 1.8;
+}
+
+.text h3 {
+  font-size: 1rem;       /* ≈ 16px */
+  font-weight: 700;      /* Daha zarif görünür */
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+
+.image {
+  flex: 1;             /* Resim alanı da eşit yer kaplar */
+}
+
+.image img {
+  max-width: 100%;     /* Resmin container'ı aşmaması için */
+  height: auto;
+}
+
+
+
+/* -------------container zone------------  */
+
+
+
+
+
+
+.whatsapp-button {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #25d366;
+  color: white;
+  border-radius: 50px;
+  padding: 12px 16px;
+  text-decoration: none;
+  font-weight: bold;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.3);
+  z-index: 1000;
+}
+
+
+
+/* -------------galeri filtresi-----------  */
+
+
+.filters {
+  margin-bottom: 10px;
+  position: absolute;
+  fle
+  
+}
+
+.filters button {
+  margin: 5px;
+  padding: 10px 20px;
+  border: none;
+  background: #ddd;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background 0.3s;
+}
+
+.filters button.active,
+.filters button:hover {
+  background: #333;
+  color: white;
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 120px;  /*/galeri arası boşluk */
+  margin-top: 150px;
+  padding: 150;
+}
+
+.item {
+  overflow: hidden;
+  opacity: 1;
+  transform: scale(1);
+  transition: all 0.4s ease;
+}
+
+.item.hide {
+  opacity: 0;
+  transform: scale(0.8);
+  pointer-events: none;
+}
+
+.item img {
+  width: 100%;
+  display: block;
+  border-radius: 10px;
+}
+/* -------------galeri filtresi sonu-----------  */
+
+
+
+
+
+
+
+
+
+
+
+/*--------------------------------------------------------------
+# Portfolio - Güncellenmiş Tek Butonlu Versiyon
+--------------------------------------------------------------*/
+.portfolio .portfolio-wrap .portfolio-links {
+  opacity: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  z-index: 3;
+  position: absolute;
+  transition: all ease-in-out 0.3s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgba(0, 0, 0, 0.7);
+}
+
+.portfolio .portfolio-wrap:hover .portfolio-links {
+  opacity: 1;
+}
+
+.portfolio .portfolio-wrap .portfolio-links a {
+  color: #fff;
+  font-size: 28px;
+  text-align: center;
+  background: rgba(20, 157, 221, 0.9);
+  transition: 0.3s;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+}
+
+.portfolio .portfolio-wrap .portfolio-links a:hover {
+  background: rgba(20, 157, 221, 1);
+  transform: scale(1.1);
+}
+
+.portfolio .portfolio-wrap .portfolio-links a i {
+  margin-left: 5px; /* Oynat simgesini biraz sağa kaydırır */
+}
+
+/* Eski butonları kaldır */
+.portfolio .portfolio-wrap .portfolio-links a + a {
+  display: none;
+}
+
+
+/*--------------------------------------------------------------

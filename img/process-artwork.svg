@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" role="img" aria-labelledby="title desc">
+  <title id="title">Portre çalışmasının hazırlanması</title>
+  <desc id="desc">Şövale üzerindeki portreye kalemle çalışan sanatçıyı anlatan illüstrasyon.</desc>
+  <rect width="800" height="600" fill="#f5f1e7"/>
+  <path d="M0 495c130-72 251-30 380 7s250 14 420-40v138H0z" fill="#c19a6b" opacity=".3"/>
+  <path d="M230 110h328v350H230z" fill="#755944"/>
+  <path d="M248 128h292v315H248z" fill="#f5f1e7"/>
+  <path d="M280 391c20-86 57-130 112-130 58 0 95 48 107 130" fill="#c19a6b"/>
+  <ellipse cx="393" cy="247" rx="62" ry="78" fill="#755944"/>
+  <path d="M331 235c5-57 29-92 67-92s64 36 66 92c-17-17-38-26-64-26-27 0-48 9-69 26" fill="#383531"/>
+  <path d="M366 252h10m35 0h10" stroke="#f5f1e7" stroke-width="5" stroke-linecap="round"/>
+  <path d="M382 287q11 8 22 0" fill="none" stroke="#f5f1e7" stroke-width="4" stroke-linecap="round"/>
+  <path d="M305 413h178" stroke="#755944" stroke-width="8" stroke-linecap="round"/>
+  <path d="M267 464l-71 101m287-101 71 101m-180-101v101" fill="none" stroke="#755944" stroke-width="14" stroke-linecap="round"/>
+  <path d="M616 164l86 186" stroke="#383531" stroke-width="16" stroke-linecap="round"/>
+  <path d="M608 146l17 36-24 11-17-36z" fill="#c19a6b"/>
+  <path d="M691 344l17 36-24 11-17-36z" fill="#755944"/>
+  <path d="M571 243c-24 10-40 25-51 47-9 18-7 42 7 55 12 11 34 8 51-5l62-50-27-57z" fill="#c19a6b"/>
+  <path d="M579 255l53 92" stroke="#755944" stroke-width="8" stroke-linecap="round"/>
+  <circle cx="616" cy="229" r="17" fill="#755944"/>
+  <path d="M111 174c0-26 20-46 46-46h29v101h-29c-26 0-46-20-46-46z" fill="#c19a6b"/>
+  <path d="M129 174h39" stroke="#f5f1e7" stroke-width="9" stroke-linecap="round"/>
+  <circle cx="135" cy="335" r="14" fill="#755944"/>
+  <circle cx="174" cy="335" r="14" fill="#c19a6b"/>
+  <circle cx="213" cy="335" r="14" fill="#383531"/>
+</svg>

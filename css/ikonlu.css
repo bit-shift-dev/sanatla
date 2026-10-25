@@ -1,0 +1,130 @@
+@media (max-width: 768px) {
+    .navbar {
+      flex-direction: column;
+      position: fixed;
+      left: 0; /* Sol tarafa yapıştır */
+      top: 0;
+      bottom: 0;
+      height: 100vh;
+      width: 80px;
+      background-color: #333;
+      z-index: 1000;
+      overflow-y: auto;
+      font-family: 'Roboto Condensed', sans-serif;
+      background-color: rgba(0, 0, 0, 0); /* yarı şeffaf siyah */
+      
+    
+    }
+  
+    .navbar a {
+      display: block;
+      color: white;
+      text-decoration: none;
+      border-bottom: 1px solid #444;
+      margin-bottom: auto;
+      font-size: 14px;
+      line-height: 20px;
+      
+      
+    }
+  
+    .navbar a:hover {
+      background-color: #555;
+    }
+
+
+
+
+
+    .navbar a {
+      font-size: 0; /* Yazıları gizle */
+      position: relative;
+      text-align: center;
+    }
+  
+    .navbar a::before {
+      font-size: 30px;
+      color: #333;
+      font-family: "Font Awesome 6 Free";
+      font-weight: 900;
+      display: block;
+      margin: auto;
+    }
+  
+    /* Her menü linki için ikon ata */
+    .navbar a[href="index.html"]::before {
+      content: "\f015"; /* Ev ikonu */
+    }
+  
+    .navbar a[href="galeri.html"]::before {
+      content: "\f03e"; /* Resim ikonu */
+    }
+  
+    .navbar a[href="isleyis.html"]::before {
+      content: "\f085"; /* Dişli */
+    }
+  
+    .navbar a[href="fiyatlar.html"]::before {
+      content: "\f155"; /* Para */
+    }
+  
+    .navbar a[href="magaza.html"]::before {
+      content: "\f07a"; /* Alışveriş çantası */
+    }
+  
+    .navbar a[href="forum.html"]::before {
+      content: "\f086"; /* Konuşma balonu */
+    }
+  
+    .navbar a[href="iletisim.html"]::before {
+      content: "\f0e0"; /* Zarf */
+    }
+  
+  
+
+
+    .logo img {
+      height: 70px; /* Logo boyutunu ayarla */
+      
+    }
+
+
+
+      
+      .container {
+        flex-direction: column; /* Yan yana olan öğeleri üst üste getir */
+        gap: 10px; /* Öğeler arasındaki boşluğu azalt */
+        display: block;
+        padding: unset; /* Padding'i sıfırlar */
+        margin: unset; /* Margin'i sıfırlar */
+        
+      }
+    
+      .container .text {
+        padding-left: 70px; /* Sol boşluğu kaldır */
+        font-size:15px; /* Yazı boyutunu küçült */
+        
+        
+      }
+    
+      .image {
+        float: right; /* Resmi sağa yasla */
+        margin-right: 0; /* Sağ kenar boşluğunu sıfırla */
+        margin-left:90px; /* Sol kenar boşluğunu artır */
+        max-width: 100%; /* Resmin genişliğini sınırlı tut */
+      }
+    
+      .image img {
+        max-width: 90%; /* Mobilde resmin genişliğini küçült */
+        height: auto; /* Oranını koru */
+      }
+
+
+      .text {
+        padding-left: 200px; /* Sadece masaüstünde sol boşluk */
+      }
+
+
+
+    
+  }

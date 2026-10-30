@@ -20,7 +20,7 @@
           <label class="choice-card"><input type="radio" name="technique" value="karakalem" checked><img src="img/karakalem/3k.jpg" alt="Karakalem örneği"><span>Karakalem</span></label>
           <label class="choice-card"><input type="radio" name="technique" value="yagli"><img src="img/yagliboya/3y.jpg" alt="Yağlıboya örneği"><span>Yağlıboya</span></label>
           <label class="choice-card"><input type="radio" name="technique" value="digital"><img src="img/digital/1d.jpg" alt="Dijital portre örneği"><span>Dijital</span></label>
-          <label class="choice-card"><input type="radio" name="technique" value="sulu"><img src="img/karakalem/4k.jpg" alt="Sulu boya portre örneği"><span>Suluboya</span></label>
+          <label class="choice-card"><input type="radio" name="technique" value="sulu"><img src="img/karakalem/3k.jpg" alt="Sulu boya portre örneği"><span>Suluboya</span></label>
           <label class="choice-card"><input type="radio" name="technique" value="kurukalem"><img src="img/karakalem/2k.jpg" alt="Kuru kalem portre örneği"><span>Kuru kalem</span></label>
         </div></fieldset>
         <fieldset class="choice-group style-group" hidden><legend>Dijital stil</legend><div class="choice-grid choice-grid-small">
@@ -34,45 +34,3 @@
           <label class="choice-card"><input type="radio" name="size" value="50x70"><img src="img/yagliboya/2y.jpg" alt=""><span>50×70 cm</span></label>
           <label class="choice-card"><input type="radio" name="size" value="70x100"><img src="img/yagliboya/4y.jpg" alt=""><span>70×100 cm</span></label>
         </div></fieldset>
-        <div class="count-fields">
-          <input type="hidden" id="figureCount" name="figures" value="1">
-          <input type="hidden" id="animalCount" name="animals" value="0">
-          <fieldset class="count-choice-group"><legend>İnsan figürü</legend><div class="count-choice-grid">
-            <button type="button" class="count-choice active" data-count-group="figureCount" data-count-value="1" aria-pressed="true"><svg class="figure-icon" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="5" r="3"/><path d="M6 21v-4a6 6 0 0 1 12 0v4M9 12h6"/></svg><strong>1</strong><span>kişi</span></button>
-            <button type="button" class="count-choice" data-count-group="figureCount" data-count-value="2" aria-pressed="false"><svg class="figure-icon" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="5" r="3"/><path d="M6 21v-4a6 6 0 0 1 12 0v4M9 12h6"/></svg><strong>2</strong><span>kişi</span></button>
-            <button type="button" class="count-choice" data-count-group="figureCount" data-count-value="3" aria-pressed="false"><svg class="figure-icon" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="5" r="3"/><path d="M6 21v-4a6 6 0 0 1 12 0v4M9 12h6"/></svg><strong>3</strong><span>kişi</span></button>
-            <button type="button" class="count-choice" data-count-group="figureCount" data-count-value="4" aria-pressed="false"><svg class="figure-icon" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="5" r="3"/><path d="M6 21v-4a6 6 0 0 1 12 0v4M9 12h6"/></svg><strong>4+</strong><span>kişi</span></button>
-          </div></fieldset>
-          <fieldset class="count-choice-group"><legend>Hayvan</legend><div class="count-choice-grid">
-            <button type="button" class="count-choice active" data-count-group="animalCount" data-count-value="0" aria-pressed="true"><svg class="figure-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 10 3 6l4 1 2-3 3 2 3-2 2 3 4-1-2 4v5a7 7 0 0 1-14 0z"/><circle cx="9" cy="13" r=".8"/><circle cx="15" cy="13" r=".8"/></svg><strong>0</strong><span>yok</span></button>
-            <button type="button" class="count-choice" data-count-group="animalCount" data-count-value="1" aria-pressed="false"><svg class="figure-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 10 3 6l4 1 2-3 3 2 3-2 2 3 4-1-2 4v5a7 7 0 0 1-14 0z"/><circle cx="9" cy="13" r=".8"/><circle cx="15" cy="13" r=".8"/></svg><strong>1</strong><span>hayvan</span></button>
-            <button type="button" class="count-choice" data-count-group="animalCount" data-count-value="2" aria-pressed="false"><svg class="figure-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 10 3 6l4 1 2-3 3 2 3-2 2 3 4-1-2 4v5a7 7 0 0 1-14 0z"/><circle cx="9" cy="13" r=".8"/><circle cx="15" cy="13" r=".8"/></svg><strong>2</strong><span>hayvan</span></button>
-            <button type="button" class="count-choice" data-count-group="animalCount" data-count-value="3" aria-pressed="false"><svg class="figure-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 10 3 6l4 1 2-3 3 2 3-2 2 3 4-1-2 4v5a7 7 0 0 1-14 0z"/><circle cx="9" cy="13" r=".8"/><circle cx="15" cy="13" r=".8"/></svg><strong>3+</strong><span>hayvan</span></button>
-          </div></fieldset>
-        </div>
-        <label class="upload-label" for="orderPhoto">Fotoğraf ekle <span>(isteğe bağlı, bu sayfada saklanmaz)</span></label>
-        <input id="orderPhoto" type="file" accept="image/*">
-        <div class="estimate-box"><p>Tahmini toplam</p><output id="estimatedPrice" aria-live="polite">1.000 TL</output><p class="estimate-note">Suluboya ve kuru kalem için karakalem fiyatları uygulanır. Dijital portrelerde stil başına sabit fiyat 800 TL'dir. Dijital dışındaki tekniklerde tablodaki ilk figür fiyatına, her ek figür için 400 TL eklenir. Kesin fiyat sipariş teyidinde netleşir.</p></div>
-        <button type="submit" class="button order-button">WhatsApp'tan sipariş verin</button>
-        <p id="orderStatus" class="order-status" role="status"></p>
-      </form>
-      <form class="reproduction-calculator" id="reproductionCalculator">
-        <div class="page-heading"><p class="eyebrow">Yağlıboya röprodüksiyon</p><h3>Röprodüksiyon fiyatını hesaplayın</h3><p>Tablonuzun en ve boy ölçüsünü girin. İnsan ve hayvan figürleri de sipariş özetine eklenir.</p></div>
-        <div class="reproduction-fields"><label for="reproductionWidth">En (cm)<input id="reproductionWidth" type="number" min="1" step="1" value="50" required></label><span class="dimension-symbol">×</span><label for="reproductionHeight">Boy (cm)<input id="reproductionHeight" type="number" min="1" step="1" value="70" required></label></div>
-        <div class="count-fields">
-          <input type="hidden" id="reproductionPeople" name="reproductionPeople" value="1"><input type="hidden" id="reproductionAnimals" name="reproductionAnimals" value="0">
-          <fieldset class="count-choice-group"><legend>İnsan figürü</legend><div class="count-choice-grid">
-            <button type="button" class="count-choice active" data-count-group="reproductionPeople" data-count-value="1" aria-pressed="true"><svg class="figure-icon" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="5" r="3"/><path d="M6 21v-4a6 6 0 0 1 12 0v4M9 12h6"/></svg><strong>1</strong><span>kişi</span></button><button type="button" class="count-choice" data-count-group="reproductionPeople" data-count-value="2" aria-pressed="false"><svg class="figure-icon" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="5" r="3"/><path d="M6 21v-4a6 6 0 0 1 12 0v4M9 12h6"/></svg><strong>2</strong><span>kişi</span></button><button type="button" class="count-choice" data-count-group="reproductionPeople" data-count-value="3" aria-pressed="false"><svg class="figure-icon" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="5" r="3"/><path d="M6 21v-4a6 6 0 0 1 12 0v4M9 12h6"/></svg><strong>3</strong><span>kişi</span></button><button type="button" class="count-choice" data-count-group="reproductionPeople" data-count-value="4" aria-pressed="false"><svg class="figure-icon" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="5" r="3"/><path d="M6 21v-4a6 6 0 0 1 12 0v4M9 12h6"/></svg><strong>4+</strong><span>kişi</span></button>
-          </div></fieldset><fieldset class="count-choice-group"><legend>Hayvan</legend><div class="count-choice-grid">
-            <button type="button" class="count-choice active" data-count-group="reproductionAnimals" data-count-value="0" aria-pressed="true"><svg class="figure-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 10 3 6l4 1 2-3 3 2 3-2 2 3 4-1-2 4v5a7 7 0 0 1-14 0z"/><circle cx="9" cy="13" r=".8"/><circle cx="15" cy="13" r=".8"/></svg><strong>0</strong><span>yok</span></button><button type="button" class="count-choice" data-count-group="reproductionAnimals" data-count-value="1" aria-pressed="false"><svg class="figure-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 10 3 6l4 1 2-3 3 2 3-2 2 3 4-1-2 4v5a7 7 0 0 1-14 0z"/><circle cx="9" cy="13" r=".8"/><circle cx="15" cy="13" r=".8"/></svg><strong>1</strong><span>hayvan</span></button><button type="button" class="count-choice" data-count-group="reproductionAnimals" data-count-value="2" aria-pressed="false"><svg class="figure-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 10 3 6l4 1 2-3 3 2 3-2 2 3 4-1-2 4v5a7 7 0 0 1-14 0z"/><circle cx="9" cy="13" r=".8"/><circle cx="15" cy="13" r=".8"/></svg><strong>2</strong><span>hayvan</span></button><button type="button" class="count-choice" data-count-group="reproductionAnimals" data-count-value="3" aria-pressed="false"><svg class="figure-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 10 3 6l4 1 2-3 3 2 3-2 2 3 4-1-2 4v5a7 7 0 0 1-14 0z"/><circle cx="9" cy="13" r=".8"/><circle cx="15" cy="13" r=".8"/></svg><strong>3+</strong><span>hayvan</span></button>
-          </div></fieldset>
-        </div><div class="estimate-box"><p>Tahmini toplam</p><output id="reproductionPrice" aria-live="polite">2.100 TL</output><p class="estimate-note">6.000 TL/m² üzerinden hesaplanır. Kesin fiyat sipariş teyidinde netleşir.</p></div>
-      </form>
-    </section>
-  </main>
-  <footer class="site-footer"><p>Sanatlan · Anılarınızı sanatla yaşatın.</p><nav aria-label="Alt menü"><a href="isleyis.html">İşleyiş</a><a href="fiyatlar.html">Fiyatlar</a><a href="iletisim.html">İletişim</a></nav></footer>
-  <a href="https://wa.me/905523910092" class="whatsapp-button" target="_blank" rel="noopener noreferrer">WhatsApp'tan ulaşın</a>
-  <script src="js/script.js"></script>
-</body>
-</html>
-

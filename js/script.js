@@ -617,3 +617,32 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 });
+
+  const reproductionCalculator = document.getElementById('reproductionCalculator');
+  if (reproductionCalculator) {
+    const money = new Intl.NumberFormat('tr-TR');
+    const updateReproductionEstimate = () => {
+      const width = Number(reproductionCalculator.querySelector('#reproductionWidth').value);
+      const height = Number(reproductionCalculator.querySelector('#reproductionHeight').value);
+      const people = Number(reproductionCalculator.elements.reproductionPeople.value);
+      const animals = Number(reproductionCalculator.elements.reproductionAnimals.value);
+      const area = (width * height) / 10000;
+      const total = area * 6000;
+      reproductionCalculator.querySelector('#reproductionPrice').textContent = area > 0 ? money.format(total) + ' TL' : '0 TL';
+      return { width, height, people, animals, area, total };
+    };
+    reproductionCalculator.addEventListener('input', updateReproductionEstimate);
+    reproductionCalculator.querySelectorAll('.count-choice').forEach((button) => {
+      button.addEventListener('click', () => {
+        const group = button.dataset.countGroup;
+        reproductionCalculator.elements[group].value = button.dataset.countValue;
+        reproductionCalculator.querySelectorAll('.count-choice[data-count-group="' + group + '"]').forEach((option) => {
+          const selected = option === button;
+          option.classList.toggle('active', selected);
+          option.setAttribute('aria-pressed', String(selected));
+        });
+        updateReproductionEstimate();
+      });
+    });
+    updateReproductionEstimate();
+  }

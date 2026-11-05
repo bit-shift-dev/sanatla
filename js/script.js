@@ -1,4 +1,57 @@
 document.addEventListener('DOMContentLoaded', () => {
+  const savedTheme = localStorage.getItem('sanatlan-theme');
+  const isDarkMode = savedTheme === 'dark';
+  document.body.classList.toggle('dark-mode', isDarkMode);
+
+  const themeToggle = document.createElement('button');
+  themeToggle.type = 'button';
+  themeToggle.className = 'theme-toggle';
+  themeToggle.setAttribute('aria-label', isDarkMode ? 'Gündüz moduna geç' : 'Gece moduna geç');
+  themeToggle.setAttribute('aria-pressed', String(isDarkMode));
+  themeToggle.innerHTML = `<span aria-hidden="true">${isDarkMode ? '☀' : '☾'}</span>`;
+  document.body.appendChild(themeToggle);
+
+  themeToggle.addEventListener('click', () => {
+    const enabled = document.body.classList.toggle('dark-mode');
+    localStorage.setItem('sanatlan-theme', enabled ? 'dark' : 'light');
+    themeToggle.setAttribute('aria-label', enabled ? 'Gündüz moduna geç' : 'Gece moduna geç');
+    themeToggle.setAttribute('aria-pressed', String(enabled));
+    themeToggle.innerHTML = `<span aria-hidden="true">${enabled ? '☀' : '☾'}</span>`;
+  });
+
+  const aboutSlides = document.querySelectorAll('.about-slide');
+  const aboutDots = document.querySelector('.about-slider-dots');
+  const aboutSlider = document.querySelector('.about-slider');
+  if (aboutSlides.length > 1 && aboutDots && aboutSlider) {
+    let activeSlide = 0;
+    aboutSlides.forEach((slide, index) => {
+      const dot = document.createElement('button');
+      dot.type = 'button';
+      dot.className = index === 0 ? 'is-active' : '';
+      dot.setAttribute('aria-label', `${index + 1}. görseli göster`);
+      dot.addEventListener('click', () => showSlide(index));
+      aboutDots.appendChild(dot);
+    });
+
+    const showSlide = (index) => {
+      activeSlide = (index + aboutSlides.length) % aboutSlides.length;
+      aboutSlides.forEach((slide, slideIndex) => {
+        slide.classList.toggle('is-active', slideIndex === activeSlide);
+      });
+      aboutDots.querySelectorAll('button').forEach((dot, dotIndex) => {
+        dot.classList.toggle('is-active', dotIndex === activeSlide);
+      });
+    };
+
+    aboutSlider.querySelector('.about-slider-prev').addEventListener('click', () => showSlide(activeSlide - 1));
+    aboutSlider.querySelector('.about-slider-next').addEventListener('click', () => showSlide(activeSlide + 1));
+    let slideTimer = setInterval(() => showSlide(activeSlide + 1), 5000);
+    aboutSlider.addEventListener('mouseenter', () => clearInterval(slideTimer));
+    aboutSlider.addEventListener('mouseleave', () => {
+      slideTimer = setInterval(() => showSlide(activeSlide + 1), 5000);
+    });
+  }
+
   const forumTopics = document.querySelectorAll('.forum-topic');
   const forumTopicButtons = document.querySelectorAll('[data-forum-topic]');
   if (forumTopics.length && forumTopicButtons.length) {
@@ -542,6 +595,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const styleGroup = calculator.querySelector('.style-group');
     const sizeGroup = calculator.querySelector('.size-group');
     const money = new Intl.NumberFormat('tr-TR');
+    renderCountIcons(calculator);
 
     const updateEstimate = () => {
       const technique = calculator.querySelector('[name="technique"]:checked').value;
@@ -579,9 +633,7 @@ document.addEventListener('DOMContentLoaded', () => {
       const techniqueNames = {
         karakalem: 'Karakalem',
         yagli: 'Yağlıboya',
-        digital: 'Dijital',
-        sulu: 'Suluboya',
-        kurukalem: 'Kuru kalem'
+        digital: 'Dijital'
       };
       const photo = photoInput.files[0];
       const message = [
@@ -618,8 +670,24 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 });
 
+function renderCountIcons(container) {
+  container.querySelectorAll('.count-choice').forEach((button) => {
+    const count = Number(button.dataset.countValue);
+    const isAnimal = button.dataset.countGroup.toLowerCase().includes('animal');
+    const label = isAnimal ? `${count} hayvan` : `${count}${count === 4 ? '+' : ''} figür`;
+    const icon = count === 0 ? '' : `<svg class="figure-icon" viewBox="0 0 ${count * 16} 24" aria-hidden="true">${Array.from({ length: count }, (_, index) => {
+      const offset = index * 16;
+      return `<g transform="translate(${offset})"><circle cx="8" cy="5" r="3"/><path d="M2 21v-4a6 6 0 0 1 12 0v4M5 12h6"/></g>`;
+    }).join('')}</svg>`;
+    button.innerHTML = isAnimal && count > 0
+      ? `${icon.replace(/<circle cx="8" cy="5" r="3"\/><path d="M2 21v-4a6 6 0 0 1 12 0v4M5 12h6"\/>/g, '<path d="M5 10 3 6l4 1 2-3 3 2 3-2 2 3 4-1-2 4v5a7 7 0 0 1-14 0z"/><circle cx="9" cy="13" r=".8"/><circle cx="15" cy="13" r=".8"/>')}${`<strong>${label}</strong>`}`
+      : `${icon}<strong>${label}</strong>`;
+  });
+}
+
   const reproductionCalculator = document.getElementById('reproductionCalculator');
   if (reproductionCalculator) {
+    renderCountIcons(reproductionCalculator);
     const money = new Intl.NumberFormat('tr-TR');
     const updateReproductionEstimate = () => {
       const width = Number(reproductionCalculator.querySelector('#reproductionWidth').value);
